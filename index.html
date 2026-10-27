@@ -205,9 +205,8 @@ footer a{text-decoration:none;color:#d8cfba}footer a:hover{color:var(--gold2)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv,.fade{opacity:1;transform:none}.hero h1 .w span{transform:none}.arc path{stroke-dashoffset:0}.four::before,.st::before{transform:none}.intro p{color:#16130d}}
 </style>
 </head>
-<body>
+<body class="go">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="crest" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M24 2 46 24 24 46 2 24Z"/><path d="M13 30V19l5.5 5L24 15l5.5 9 5.5-5v11zM13 34h22"/></symbol></svg>
-<div id="pre" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"><path pathLength="1" d="M24 2 46 24 24 46 2 24Z"/><path pathLength="1" d="M13 30V19l5.5 5L24 15l5.5 9 5.5-5v11zM13 34h22"/></svg><p>BADSHAH CLUB</p></div>
 <nav id="nav">
   <a class="mark" href="#home" aria-label="Badshah Club home"><svg class="crest" aria-hidden="true"><use href="#crest"/></svg><span class="wm">BADSHAH<small>CLUB</small></span></a>
   <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">Menu</button>
@@ -362,7 +361,7 @@ sky("sk1",1600,900,820,7,120,340);sky("sk2",1600,900,900,19,90,250);
 sky("sk3",800,450,450,31,60,230);sky("sk4",800,900,900,43,160,520);sky("sk5",1600,900,900,57,110,400);
 document.getElementById("yr").textContent=new Date().getFullYear();
 // load sequence
-var pre=document.getElementById("pre");setTimeout(function(){pre.classList.add("out");document.body.classList.add("go")},rm?0:1700);
+
 // nav
 var nav=document.getElementById("nav");function sc(){nav.classList.toggle("solid",scrollY>40)}addEventListener("scroll",sc,{passive:true});sc();
 var b=document.getElementById("burger"),m=document.getElementById("menu");
